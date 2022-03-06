@@ -1,0 +1,14 @@
+ // 原型链的终点及数组的原型链
+        function Peopel() {
+        }
+        var xiaoming = new People();
+        console.log(xiaoming.__proto__.__proto__ === Object.prototype);
+        console.log(Object.__proto__);
+
+
+        var xiaoming = [22,33,55,99];
+        
+        console.log(arr.__proto__ === Array.protype);
+        console.log(arr.__proto__.__proto__ === Object.protype);
+        console.log(Array.prototype.hasOwnProperty("push"));
+        console.log(Array.prototype.hasOwnProperty("splice"));
